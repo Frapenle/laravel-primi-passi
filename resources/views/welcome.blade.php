@@ -7,7 +7,12 @@
         <title>Laravel</title>
 
         <!-- Fonts -->
-        <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    {{-- Bootstrap --}}
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
 
         <!-- Styles -->
         <style>
@@ -20,7 +25,23 @@
             }
         </style>
     </head>
-    <body class="antialiased">
+    <body class="">
+        <header class="container mt-3">
+        <div class="row flex-row justify-content-between">
+            <div class="col-12">
+                <nav class="navbar">
+                    <ul class="navbar-nav d-flex flex-row gap-3">
+                        <a href="/"><li class="nav-item">Home</li></a>
+                        <a href="/welcome"><li class="nav-item">Documentation</li></a>
+                        <a href="https://laravel-news.com/"><li class="nav-item">News</li></a>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="col-12">
+            <h1 class="fs-1 text-center">Laravel from 0 to Zero</h1>
+        </div>
+    </header>
         <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
             @if (Route::has('login'))
                 <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
